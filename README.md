@@ -109,4 +109,15 @@ IoT 개발자과정 기초 프로그래밍 언어 학습 리포지토리
 
 ### C 기본문법 계속
 
+1. 기본 문법
+
+    - 데이터형 : [확인](./Day02/Chap03-Solutioin/Chap03-01-app/main.c)
+    - 실수형 및 변수 : [확인](./Day02/Chap03-Solutioin/Chap03-02-app/main.c)
+    - 데이터 입력 : [확인](./Day02/Chap03-Solutioin/Chap03-03-app/main.c) 
+
+    -연산자 : [확인](./Day02/Chap04-01-app/Chap04-01-Solution/main.c)
+
+2. 퀴즈 : [확인](./Day02/Chap04-01-app/Chap04-quiz-2/main.c)
+    - bmi = 몸무게 / ((키 / 100) * (키 / 100))
+
     
