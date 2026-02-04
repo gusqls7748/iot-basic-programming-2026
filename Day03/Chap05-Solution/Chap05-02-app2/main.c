@@ -26,7 +26,7 @@ int main() {
 	//case 4:
 	//	money = 50;    // 50만원
 	//	break;
-	//default:           // 그 외의 모든 경우 if문 else
+	//default:           // 그 외의 모든 경우 if문 else if문의 else와 동일
 	//	money = 10;    // 10만원
 	//	break;
 

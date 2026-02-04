@@ -43,10 +43,10 @@ int main() {
 	a = 0;
 
 	do {
-		printf("do~while 실행!\n");
+		printf("do~while 실행!\n"); // 무조건 한번 실행
 		a--;
 	} while (a > 0);
-	printf("do~while 종료\n");
+	printf("do~while 종료\n"); // 애도 출력됨
 
 	return 0;
 }
