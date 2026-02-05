@@ -7,6 +7,8 @@ IoT 개발자과정 기초 프로그래밍 언어 학습 리포지토리
 - 리드미 미리보기; ctrl + shift + v
 - https://hongong.hanbit.co.kr/ 혼자 공부할떄 도움 됨
 - ` ` 하면 글꼴 변경
+- remember 사이트 (추천함)
+
 
 ### C언어 학습 순서
 - 기본
@@ -151,4 +153,33 @@ IoT 개발자과정 기초 프로그래밍 언어 학습 리포지토리
 
 ### C 기본 문법 계속
 1. 함수 계속
-    - 함수 유형 :
+    - 함수 유형 : [확인](./Day03/Chap07-Solution/Chap07-02-app/main.c)
+        - 매개 변수 없는 함수
+        - 반환값이 없는 함수
+        - 매개변수와 반환값이 없는 함수
+        - `매개변수 , 반환값이 있는 함수` - Chap07-01-app
+    - 재귀호출 함수 : [확인](./Day03/Chap07-Solution/Chap07-03-app/main.c)
+
+2. 배열
+    - 동일 자료형의 묶음 - `ary[10]`
+    - 배열 선언, 초기화 : [확인](./Day04/Chap08-Solution/Chap08-01-app/main.c)
+    - 문자배열(문자열) : [확인](./Day04/Chap08-Solution/Chap08-03-app/main.c)
+    - 대소문자 변환 : [확인](./Day04/Chap08-Solution/Chap08-quiz2/main.c)
+
+        ![alt text](image-7.png)
+
+3. 포인터
+    - 변수 스코프 : [확인](./Day04/Chap09-Solution/Chap09-01-app/main.c)
+    - 변수에 담긴 데이터를 공유하기 위해서...
+    - 프로그램에서 사용하는 `메모리를 절약`하기 위한 목적
+    - 메모리 주소 
+        - 주소 연산자 & [확인](./Day04/Chap09-Solution/Chap09-02-app/main.c)
+        - 간접 참조 연산자(포인터 연산자) * [확인](./Day04/Chap09-Solution/Chap09-03-app/main.c)
+    - 포인터 이해
+
+## 5일차
+
+### C 기본 문법
+
+1. 포인터
+    - 포인터 이해
