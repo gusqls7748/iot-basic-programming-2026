@@ -4,13 +4,14 @@
 // 하위 폴더에 있는 파일을 추가할떄는 printf()와 다르게 \\ 사용하지 않음
 #include ".\include\student.h"	// 사용자 헤더파일은 ""로 추가
 
+// 메크로 정의
 #define PI 3.1459265359
 #define LIMIT 100.0
 #define MSG "passed!"
 #define ERR_PRN printf("허용범위 초과!!");
 
 //조건부 컴파일 지시자
-#define VER 4
+#define VER 6
 #define BIT16
 
 void func(void); // 함수 선언
@@ -23,24 +24,23 @@ int main(void) {
 
 	int max;
 
-//#ifdef BIT16
-//	// 컴파일할 내용추가
-//#define BIT16
-//#endif 
-//
-//
-//#if VER >= 6
-//	printf("버전 %d입니다.\n", VER);
-//#else
-//#error 컴파일러 버전은 6.0 이상이어야 합니다.
-//		// printf("버전확인하세요.\n");	
-//#endif
-//
-//#ifdef BIT16
-//	max = 32767;
-//#else
-//	max = 2147483647;
-//#endif 
+#ifndef BIT16
+	// 컴파일할 내용추가
+#define BIT16
+#endif
+
+#if VER >= 6 	
+	printf("버전 %d입니다.\n", VER);
+#else
+#error 컴파일러 버전은 6.0 이상이어야 합니다.
+	// printf("버전확인하세요\n");
+#endif
+
+#ifdef BIT16
+	max = 32767;
+#else
+	max = 2147483647;
+#endif
 
 	printf("학번 : %d, 이름 : %s\n", st1.num, st1.name);
 
@@ -55,6 +55,7 @@ int main(void) {
 		printf("원 면적 : %.2lf (%s)\n", area, MSG);
 	}
 
+	// 파이썬에서도 확인 가능
 	printf("컴파일(빌드) 날짜와 시간 : %s, %s/n", __DATE__, __TIME__);
 	printf("파일명 : %s\n", __FILE__);
 	printf("함수명 : %s\n", __FUNCTION__);
