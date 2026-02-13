@@ -212,8 +212,8 @@ static void list_contact(void) {
 
 // 메뉴 3. 검색함수
 static void search_contact(void) {
-	char keyword[NAME_LEN];
-	int found = 0;
+	char keyword[NAME_LEN];		// 사용자가 입력할 검색어
+	int found = 0;				// 감색결과가 있는지 체크하는 변수
 	int i;
 
 	if (count == 0) {
@@ -238,7 +238,7 @@ static void search_contact(void) {
 			printf("순번 : %d\n", i + 1);
 			print_contact(i); // 상세출력
 			puts("==================================================");
-			found = 1;
+			found = 1;		// 검색 결과가 하나라도 있음을 표시
 		}
 	}
 
@@ -249,6 +249,7 @@ static void search_contact(void) {
 
 // 메뉴 3-1. 주소록 1건 상세출력 함수
 static void print_contact(int index) {
+	// contacts[index]는 배열에서 찾은 그 사람의 번호입니다.
 	printf("이름 : %s\n", contacts[index].name);
 	printf("전화 : %s\n", contacts[index].phone);
 	printf("주소 : %s\n", contacts[index].address);

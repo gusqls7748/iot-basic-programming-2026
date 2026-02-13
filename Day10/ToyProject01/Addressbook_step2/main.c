@@ -15,17 +15,17 @@
 #define MEMO_LEN	  129
 
 typedef struct _contact {
-	char name[NAME_LEN];
-	char phone[PHONE_LEN];
-	char address[ADDR_LEN];
-	char email[EMAIL_LEN];
-	char memo[MEMO_LEN];
+	char name[NAME_LEN];		// 이름
+	char phone[PHONE_LEN];		// 전화번호
+	char address[ADDR_LEN];		// 주소
+	char email[EMAIL_LEN];		// 이메일
+	char memo[MEMO_LEN];		// 메모
 
 } Contact;	// 이후 Contact
 
 // 변수 선언
-static Contact contacts[MAX_CONTACTS];
-static int count = 0;
+static Contact contacts[MAX_CONTACTS];  // contact 구조체 100개를 담을 수 있는 (배열)
+static int count = 0;					// 현재 count에 (저장되어)있는지 카운트
 
 // 함수 선언
 static void print_menu(void);		// 이 소스내에서만 쓰겠다.
@@ -120,6 +120,7 @@ static int read_menu(void) {
 
 // fgets로 입력할 때 문제가 발생하지 않도록, 문자열 끝에 '\n' 제거
 static void read_line(char* buf, int size) {
+	// fgets로 한 줄을 통쨰로 읽어옵니다
 	if (fgets(buf, size, stdin) == NULL) {
 		buf[0] = '\0';
 		return;

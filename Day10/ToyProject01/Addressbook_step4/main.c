@@ -1,6 +1,6 @@
 ﻿// 주소록 프로그램 step4
 
-#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS	// scanf, fgets 등에서 보안 경고 무시
 
 #pragma region 전처리 영역
 
@@ -22,6 +22,7 @@
 
 #pragma endregion
 
+// 연락처 구조체 정의
 typedef struct _contact {
 	char name[NAME_LEN];
 	char phone[PHONE_LEN];
@@ -31,7 +32,7 @@ typedef struct _contact {
 
 } Contact;	// 이후 Contact
 
-// 변수 선언
+// 전역 변수 선언
 static Contact contacts[MAX_CONTACTS];
 static int count = 0;
 
